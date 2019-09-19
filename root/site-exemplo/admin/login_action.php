@@ -6,8 +6,8 @@
 
     $Usu = $usuario_dao->BuscarObjPorUsuarioSenha($_POST["Email"], $_POST["Senha"]);
      var_dump($Usu); 
-    if($Usu != null) {
-        
+    if($Usu != null) 
+    {        
         session_start();
         $_SESSION["Usuario"] = $_POST["Email"];
         $_SESSION["Nome"] = $Usu->Nome;
